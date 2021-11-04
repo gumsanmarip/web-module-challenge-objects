@@ -54,14 +54,14 @@ const burger = {
   category: "Lunch", 
   discount: function(string){
     if(string ==='teacher'||string ==='student'){
-      return 13.5;
+      return this.price * 0.75;
     }
     else{
-      return 16.2;
+      return this.price * .9;
     }
   }
 }
-  console.log('task 2', burger.discount('public'));
+  console.log('task 2', burger.discount('teacher'));
 
 
 ///////////////Reviews (MVP)///////////////////
